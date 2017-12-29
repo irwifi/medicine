@@ -1,7 +1,8 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background:  url(../images/logo.png) no-repeat center center;
+  background:  url(../images/logo.png) no-repeat 806px center;
   background-size:  294px;
+  min-width: 1600px;
   height: 900px;
 }
 
