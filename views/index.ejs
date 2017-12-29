@@ -9,15 +9,15 @@
     <div class="main_wrapper"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-    	<%
+    	<%/*
                 	let data_array = [];
                 	for(item in data) {
                 		data_array.push([data[item].elementName, data[item].top, data[item].left, data[item].size, data[item].color, data[item].page]);
                 	}
-    	%>
+    	*/%>
 
-    	let data_string = "<%=data_array%>";
-                // let data_string = "Brain,55,640,220,#f7c50a,Brain,Vessels,465,345,190,#ff6b12,Vessels,Kidney,700,630,220,#da7ba4,Kidney,Lungs,340,1240,220,#4b71f3,Lungs,Liver,670,1060,220,#b38127,Liver,Skin,570,1360,190,#99d9f5,Skin,Special,20,405,190,#c286c3,Special,Gastro,40,1130,220,#75bd19,Gastro,Heart,325,425,220,#fd362d,Heart,Genital,440,35,190,#d0a3a3,Genital,Immunity,430,1680,190,#70e080,Immunity,Endocrine,92,1414,190,#f7bb7c,Endocrine";
+    	// let data_string = "<%#=data_array%>";
+                let data_string = "Brain,55,640,220,#f7c50a,Brain,Vessels,465,345,190,#ff6b12,Vessels,Kidney,700,630,220,#da7ba4,Kidney,Lungs,340,1240,220,#4b71f3,Lungs,Liver,670,1060,220,#b38127,Liver,Skin,570,1360,190,#99d9f5,Skin,Special,20,405,190,#c286c3,Special,Gastro,40,1130,220,#75bd19,Gastro,Heart,325,425,220,#fd362d,Heart,Genital,440,35,190,#d0a3a3,Genital,Immunity,430,1680,190,#70e080,Immunity,Endocrine,92,1414,190,#f7bb7c,Endocrine";
 
     	data_string = data_string.split(",");
     	const data_col = 6;
