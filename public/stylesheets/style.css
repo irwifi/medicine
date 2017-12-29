@@ -1,0 +1,30 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:  url(../images/logo.png) no-repeat center center;
+  background-size:  294px;
+  height: 900px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.main_wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.main_wrapper .elements {
+	position: absolute;
+	opacity: 0.7;
+	color:  #FFF;
+	border-radius:  100%;
+	text-align: center;
+	font-size:  32px;
+	cursor: pointer;
+}
+
+.main_wrapper .elements:hover {
+	opacity:  1;
+}
