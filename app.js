@@ -4,19 +4,20 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-// const mongodb = require('mongodb');
-// const mongoose=require('mongoose');
+const mongodb = require('mongodb');
+const mongoose=require('mongoose');
 
 var index = require('./routes/index');
 var elements = require('./routes/elements');
 
 var app = express();
 
-// mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://localhost:27017/medicine', {
-//  	useMongoClient: true
-// });
-// var db = mongoose.connection;
+mongoose.connect('mongodb://heroku_pq49qhwc:rprmg9m41hlr1ca42bk0kra25l@ds135547.mlab.com:35547/heroku_pq49qhwc', {
+ 	useMongoClient: true
+});
+var db = mongoose.connection;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

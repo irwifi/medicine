@@ -31,6 +31,6 @@ var ElementSchema = mongoose.Schema({
 	}
 });
 
-var Elements= mongoose.model('Element',ElementSchema);
+var Elements= mongoose.model('elements',ElementSchema);
 
 module.exports = {Elements};
