@@ -7,15 +7,24 @@
     "nodemon": "set NODE_ENV=development && nodemon ./bin/www"
   },
   "dependencies": {
+    "async": "^2.1.2",
+    "bcryptjs": "^2.3.0",
     "body-parser": "~1.18.2",
+    "bootstrap": "^3.3.7",
+    "client-sessions": "^0.7.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "jquery": "^3.1.1",
+    "jquery-validation": "^1.15.1",
+    "js-base64": "^2.1.9",
     "lodash": "^4.17.4",
+    "method-override": "^2.3.6",
     "mongodb": "^3.0.1",
     "mongoose": "^5.0.0-rc0",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "validator": "^6.1.0"
   }
 }

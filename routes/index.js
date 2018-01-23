@@ -1,10 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var {Elements} = require('../models/element');
-var _ = require('lodash');
+"use strict";
+const express = require('express');
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', async(req, res) =>  {
+router.get('/', (req, res, next) =>  {
 	 var result = await Elements.find({'status': 1});//.select({ "elementName": 1, "_id": 0});
   	res.render('index', { title: 'AboutMedicine', data: result});
 });
