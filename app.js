@@ -23,6 +23,7 @@ const hauthen = require('./handlers/hauthen')( { express } );
 const index = require('./routes/index');
 // const authen = require('./routes/authen');
 const admin = require('./routes/admin');
+const category = require('./routes/category');
 // const users = require('./routes/users');
 
 // mongoose.Promise = global.Promise;
@@ -71,6 +72,7 @@ app.use(methodOverride((req, res) => {
 app.use('/', index);
 // app.use(hauthen);
 // app.use('/authen', authen);
+app.use('/category', category);
 app.use('/admin', admin);
 // app.use('/users', users);
 

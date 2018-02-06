@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const  express = require('express');
+const router = express.Router();
+const {Category} = require('../models/category');
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('admin')
+  res.render('admin/login')
 });
+
+router.get('/home',async(req,res)=>{
+	var result = await Category.find();
+	console.log(result)
+	res.render('admin/home',{ title: 'AboutMedicine' , data: result})
+})
 
 module.exports = router;
