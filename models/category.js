@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-var ElementSchema = mongoose.Schema({
-	elementName: {
+var CategorySchema = mongoose.Schema({
+	catName: {
 		type: String,
 		required: true,
 		unique: true
@@ -31,6 +31,6 @@ var ElementSchema = mongoose.Schema({
 	}
 });
 
-var Elements= mongoose.model('elements',ElementSchema);
+var Category= mongoose.model('category',CategorySchema);
 
-module.exports = {Elements};
+module.exports = {Category};

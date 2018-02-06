@@ -8,8 +8,6 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const sessions = require("client-sessions");
 const validator = require('validator');
-// const mongodb = require('mongodb');
-// const mongoose=require('mongoose');
 
 var app = express();
 
@@ -24,7 +22,7 @@ const hauthen = require('./handlers/hauthen')( { express } );
 
 const index = require('./routes/index');
 // const authen = require('./routes/authen');
-// const admin = require('./routes/admin');
+const admin = require('./routes/admin');
 // const users = require('./routes/users');
 
 // mongoose.Promise = global.Promise;
@@ -71,9 +69,9 @@ app.use(methodOverride((req, res) => {
 }));
 
 app.use('/', index);
-app.use(hauthen);
+// app.use(hauthen);
 // app.use('/authen', authen);
-// app.use('/admin', users);
+app.use('/admin', admin);
 // app.use('/users', users);
 
 console.log("Application running at http://localhost:3000/ ");
